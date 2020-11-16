@@ -1,4 +1,3 @@
-console.log('Client Side JS is loaded');
 
 const weatherData = (address)=>{
     message.textContent = 'Loading...';
