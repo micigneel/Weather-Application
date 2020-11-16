@@ -14,8 +14,10 @@ const forcast = (coordinate, callback)=>{
         else{
             var currentWeather = response.body.current;
             callback(undefined , 'Weather Status : '+currentWeather.weather_descriptions[0]
-            +". It is currently "+ currentWeather.temperature+
-            " degrees out. But feels like "+currentWeather.feelslike+" degrees out");
+            +". \
+             It is currently "+ currentWeather.temperature+
+            " degrees out. But feels like "+currentWeather.feelslike+" degrees out. \
+            Humidity - "+currentWeather.humidity);
         }
     });
 }
