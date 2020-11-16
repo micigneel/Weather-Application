@@ -3,7 +3,7 @@ const weatherData = (address)=>{
     message.textContent = 'Loading...';
     errMess.textContent = '';
     locationMess.textContent = '';
-    const URL = 'http://localhost:3000/weather?address='+address;
+    const URL = '/weather?address='+address;
     fetch(URL).then(
     (response)=>{
         response.json().then(

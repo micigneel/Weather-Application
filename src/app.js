@@ -4,6 +4,7 @@ const app = express();
 const hbs = require('hbs');
 const geoUtil = require('../src/utils/geocode')
 const foreCastUtil = require('../src/utils/forcast')
+const port = process.env.PORT || 3000;
 
 //Define paths for Express config
 const publicDirPath = path.join(__dirname, '../public');
@@ -78,6 +79,6 @@ app.get('*', (req, res)=>{
     });
 });
 
-app.listen(3000, ()=>{
-    console.log('Server is hosted with port:::3000');
+app.listen(port, ()=>{
+    console.log('Server is hosted with port:::', port);
 });
