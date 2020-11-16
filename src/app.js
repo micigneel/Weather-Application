@@ -30,7 +30,7 @@ app.get('', (req, res)=>{
 app.get('/about', (req, res)=>{
     res.render('about', {
         title : 'About Us',
-        info : 'This is a weather app',
+        info : 'This is a weather app which gives real time weather based on ur location',
         creator : 'Cams'
     });
 });
